@@ -64,7 +64,7 @@ Configuration-open-admin-panel-laravel-11/
 </pre>
     
 Temukan folder [ vendor/open-admin-org ] dalam project laravel anda
-dan ganti dengan folder yang ada di dalam [ open-admin-org.zip ] yang ada dalam repository yang sudah saya tambahkan
+dan ganti dengan folder yang ada di dalam  [ open-admin-org.zip ] yang ada dalam repository yang sudah saya tambahkan
 
 ---
 
