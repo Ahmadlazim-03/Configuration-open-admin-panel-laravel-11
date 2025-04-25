@@ -5,13 +5,30 @@ Sebuah aplikasi web untuk mengelola data pengguna dengan tampilan yang interakti
 
 ---
 
+## 🛠️ Instalasi
+
+Berikut langkah-langkah untuk menjalankan proyek ini di lokal:
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/username/nama-project.git
+cd nama-project
+
+
+
 ## 📋 Fitur Utama
 
-- ✅ CRUD Data Pengguna
-- ✅ Autentikasi dan Registrasi
-- ✅ Responsive Design (Tailwind CSS)
-- ✅ AJAX & Livewire untuk UI interaktif
+- ✅ Admin
+```bash
 
+
+
+- ✅ Helpers
+- ✅ Media Manager
+- ✅ Log Viewer
+- ✅ Api Tester
+- ✅ Api Tester
 ---
 
 ## 📦 Prasyarat
@@ -25,12 +42,3 @@ Sebelum memulai, pastikan kamu sudah menginstal:
 
 ---
 
-## 🛠️ Instalasi
-
-Berikut langkah-langkah untuk menjalankan proyek ini di lokal:
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/username/nama-project.git
-cd nama-project
