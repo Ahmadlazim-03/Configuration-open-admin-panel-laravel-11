@@ -9,7 +9,7 @@ Sebuah aplikasi web untuk mengelola data pengguna dengan tampilan yang interakti
 
 Sebelum memulai, pastikan kamu sudah menginstal:
 
-- [PHP >= 8.0](https://www.php.net/)
+- [PHP](https://www.php.net/)
 - [Composer](https://getcomposer.org/)
 - [MySQL / MariaDB](https://www.mysql.com/)
 - [Laravel Version 11](https://laravel.com/)
@@ -24,55 +24,95 @@ Berikut langkah-langkah untuk menjalankan proyek ini di lokal:
 
 ```bash
 git clone https://github.com/Ahmadlazim-03/Configuration-open-admin-panel-laravel-11.git
-cd laravel
+cd Configuration-open-admin-panel-laravel-11
 cp .env.example .env
-
-Buka .env dan sesuaikan sesuai konfigurasi berikut :
-APP_URL=http://localhost -> APP_URL=http://127.0.0.1:8000
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_data_base
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-
-composer install
-php artisan key:generate
-php artisan migrate
-
-Temukan folder [ vendor/open-admin-org ] dalam project laravel anda dan ganti dengan folder yang ada di dalam [ open-admin-org.zip ]
-
 ```
+
+Buka .env dan sesuaikan sesuai konfigurasi berikut :<br/>
+
+APP_URL=http://localhost -> APP_URL=http://127.0.0.1:8000<br/>
+DB_CONNECTION=mysql<br/>
+DB_HOST=127.0.0.1<br/>
+DB_PORT=3306<br/>
+DB_DATABASE=your_data_base<br/>
+DB_USERNAME=your_username<br/>
+DB_PASSWORD=your_password<br/>
+
+```bash
+$ composer install
+$ php artisan key:generate
+$ php artisan migrate
+```
+
+---
+
+## ❗❗❗ Penyesuaian File Vendor pada project laravel anda
+
+<pre>
+Configuration-open-admin-panel-laravel-11/
+├── app
+├── bootstrap
+├── config
+├── database
+├── public
+├── resources
+├── routes
+├── storage
+├── tests
+├── vendor
+    └── open-admin-org 👈
+</pre>
+    
+Temukan folder [ vendor/open-admin-org ] dalam project laravel anda
+dan ganti dengan folder yang ada di dalam [ open-admin-org.zip ] yang ada dalam repository yang sudah saya tambahkan
+
+---
+
+## ▶ Jalankan aplikasi
+
+```bash
+$ php artisan ser
+```
+Akses route pada http://127.0.0.1:8000/admin untuk mengakses open admin panel
+Login dengan default akun admin :<br/>
+username : admin<br/>
+password : admin
+
 ---
 
 
 ## 📋 Fitur Utama
 
 - ✅ Admin
-```bash
-php artisan admin:install
-```
+- ✅ Helpers
+- ✅ Media Manager
+- ✅ Log Viewer
+- ✅ Api Tester
+---
 
+## ❌ Hapus Fitur Utama
+
+- ✅ Admin
+```bash
+$ composer remove open-admin-org/open-admin
+```
 - ✅ Helpers
 ```bash
-php artisan admin:import helpers
+$ composer remove open-admin-ext/helpers
 ```
-
 - ✅ Media Manager
 ```bash
-php artisan admin:import media-manager
+$ composer remove open-admin-ext/media-manager
 ```
-
 - ✅ Log Viewer
 ```bash
-php artisan admin:import log-viewer
+$ composer remove open-admin-ext/log-viewer
 ```
-
 - ✅ Api Tester
 ```bash
-php artisan admin:import api-tester
-```
+$ composer remove open-admin-ext/api-tester
 
+```
 ---
 
 
