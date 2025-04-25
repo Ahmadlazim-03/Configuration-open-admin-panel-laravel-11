@@ -26,8 +26,21 @@ Berikut langkah-langkah untuk menjalankan proyek ini di lokal:
 git clone https://github.com/Ahmadlazim-03/Configuration-open-admin-panel-laravel-11.git
 cd laravel
 cp .env.example .env
+
+Buka .env dan sesuaikan sesuai konfigurasi berikut :
+APP_URL=http://localhost -> APP_URL=http://127.0.0.1:8000
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_data_base
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+
 composer install
 php artisan key:generate
+php artisan migrate
+
+Temukan folder [ vendor/open-admin-org ] dalam project laravel anda dan ganti dengan folder yang ada di dalam [ open-admin-org.zip ]
 
 ```
 ---
